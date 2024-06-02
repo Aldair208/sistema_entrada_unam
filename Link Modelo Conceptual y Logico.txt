@@ -1,0 +1,5 @@
+MODELO CONCEPTUAL
+https://lucid.app/lucidchart/3c63aec5-66d9-42be-b2ff-9d5bb917468f/edit?viewport_loc=405%2C37%2C2609%2C1188%2C0_0&invitationId=inv_325f51dc-8263-4441-aff6-decac3a6a964
+
+MODELO LOGICO
+https://lucid.app/lucidchart/fe763db8-2b68-4295-ba2e-5c891718abf0/edit?viewport_loc=-1514%2C-881%2C6205%2C2827%2C0_0&invitationId=inv_86d140f6-e7d0-481f-b686-3f8e78693458
