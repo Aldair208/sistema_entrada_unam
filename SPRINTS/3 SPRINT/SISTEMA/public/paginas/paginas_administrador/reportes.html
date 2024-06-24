@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo de Ingreso - Salida</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/public/paginas/paginas_administrador/styles.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-dark-blue text-white text-center p-2 fixed-top">
+        <div class="d-flex justify-content-between align-items-center">
+            <img src="" alt="Logo" width="50" height="50">
+            <div>
+                <div>MÓDULO DE INGRESO - SALIDA</div>
+                <small>Administrador</small>
+            </div>
+            <a class="text-white" href="/public/paginas/login_administrador.html">
+                <img src="" alt="Salir" width="30" height="30">
+            </a>
+        </div>
+    </header>
+    <div class="d-flex" style="height: calc(100vh - 10vh); padding-top: 10vh;">
+        <div class="sidebar bg-light p-3" style="width: 15%; border-right: 1px solid black;">
+            <a class="nav-link text-center mb-3" href="/public/paginas/paginas_administrador/agregar_personall.html">
+                <img src="" alt="Crear Nuevo Usuario" width="50" height="50">
+
+            </a>
+            <a class="nav-link text-center mb-3" href="/public/paginas/paginas_administrador/gestionar_personal.html">
+                <img src="" alt="Administrar Usuarios" width="50" height="50">
+
+            </a>
+            <a class="nav-link text-center mb-3" href="/public/paginas/paginas_administrador/reportes.html">
+                <img src="" alt="Generar Reporte" width="50" height="50">
+
+            </a>
+        </div>
+        <div class="content bg-grey p-3" style="width: 85%;">
+            <div class="container">
+                <h2 class="text-center">GENERAR REPORTE</h2>
+                <div class="mb-3">
+                    <h4>Filtros:</h4>
+                    <div class="row">
+                        <div class="col">
+                            <label for="filtro-fecha" class="form-label">Ingresar Fecha:</label>
+                            <input type="date" class="form-control" id="filtro-fecha">
+                        </div>
+                        <div class="col">
+                            <label for="filtro-dni" class="form-label">DNI:</label>
+                            <input type="text" class="form-control" id="filtro-dni">
+                        </div>
+                        <div class="col">
+                            <label for="filtro-carrera" class="form-label">Carrera:</label>
+                            <select class="form-select" id="Carrera">
+                                <option value="null"></option>
+                                <option value="administracion">Administracion</option>
+                                <option value="IngSistemas">Ing. Sistemas</option>
+                                <option value="IngPesquera">Ing. Pesquera</option>
+                                <option value="IngAmbiental">Ing. Ambiental</option>
+                                <option value="Derecho">Derecho</option>
+                                <option value="Contabilidad">Contabilidad</option>
+                                <option value="Medicina">Medicina</option>
+                                <option value="IngCivil">Ing. Civil</option>
+                                <option value="IngMinas">Ing. Minas</option>
+                                <option value="IngAgroindustrial">Ing. Agroindustrial</option>
+                                <option value="GestionP">Gestion Publica</option>
+                                <option value="Otro">No pertenece a una carrera</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for="filtro-campus" class="form-label">Sede:</label>
+                            <select class="form-select" id="filtro-campus">
+                                <option value="Ilo">Ilo</option>
+                                <option value="Ichuña">Ichuña</option>
+                                <option value="Moquegua">Moquegua</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="text-center mt-3">
+                        <button type="button" class="btn btn-primary">Buscar</button>
+                        <button type="button" class="btn btn-secondary">Descargar Reporte</button>
+                        <button type="button" class="btn btn-secondary">Backup</button>
+                    </div>
+                </div>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>DNI</th>
+                            <th>Nombres</th>
+                            <th>Apellidos</th>
+                            <th>Fecha y Hora de Ingreso</th>
+                            <th>Ingreso/Salida</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Los datos de la tabla se llenarán aquí desde la base de datos -->
+                        <tr>
+                            <td>75360777</td>
+                            <td>Sara Belen</td>
+                            <td>Del Castillo Taipe</td>
+                            <td>08/06/2024 14:00:00</td>
+                            <td>Ingreso</td>
+                        </tr>
+                        <!-- Más filas de ejemplo -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
