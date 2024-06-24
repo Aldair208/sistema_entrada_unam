@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo de Ingreso - Salida</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/public/paginas/paginas_administrador/styles.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-dark-blue text-white text-center p-2 fixed-top">
+        <div class="d-flex justify-content-between align-items-center">
+            <img src="/public/imagenes/logo_unam.png" alt="UNAM Logo" width="50" height="50">
+            <div>
+                <div>MÓDULO DE INGRESO - SALIDA</div>
+                <small>Administrador</small>
+            </div>
+            <a class="text-white" href="/public/paginas/menu_administrador.html">
+                <img src="/public/imagenes/salida.png" alt="Salir" width="30" height="30">
+            </a>
+        </div>
+    </header>
+    <div class="d-flex" style="height: calc(100vh - 10vh); padding-top: 10vh;">
+        <div class="sidebar bg-light p-3" style="width: 15%; border-right: 1px solid black;">
+            <br>
+            <a class="nav-link text-center mb-3" href="/public/paginas/paginas_administrador/agregar_personall.html">
+                <img src="/public/imagenes/Crear_usuario.png" alt="Crear Nuevo Usuario" width="50" height="50">
+                <br>
+                <span>Crear Nuevo Usuario</span>
+            </a>
+            <br>
+            <a class="nav-link text-center mb-3" href="/public/paginas/paginas_administrador/gestionar_personal.html">
+                <img src="/public/imagenes/administrar_usuario.png" alt="Administrar Usuarios" width="50" height="50">
+                <br>
+                <span>Administrar Usuario</span>
+            </a>
+            <br>
+            <a class="nav-link text-center mb-3" href="/public/paginas/paginas_administrador/reportes.html">
+                <img src="/public/imagenes/reporte.png" alt="Generar Reporte" width="50" height="50">
+                <br>
+                <span>Generar reporte</span>
+
+            </a>
+        </div>
+        <div class="content bg-grey p-3" style="width: 85%;">
+            <div class="container">
+                <h2 class="text-center">FORMULARIO NUEVO USUARIO</h2>
+                <form>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="nombres" class="form-label">Nombres:</label>
+                            <input type="text" class="form-control" id="nombres">
+                        </div>
+                        <div class="col">
+                            <label for="apellidos" class="form-label">Apellidos:</label>
+                            <input type="text" class="form-control" id="apellidos">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="dni" class="form-label">DNI:</label>
+                            <input type="text" class="form-control" id="dni">
+                        </div>
+                        <div class="col">
+                            <label for="correo" class="form-label">Correo Electrónico:</label>
+                            <input type="email" class="form-control" id="correo">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="usuario" class="form-label">Usuario:</label>
+                            <input type="text" class="form-control" id="usuario">
+                        </div>
+                        <div class="col">
+                            <label for="contrasena" class="form-label">Contraseña:</label>
+                            <input type="password" class="form-control" id="contrasena">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="n_puerta" class="form-label">N Puerta:</label>
+                            <input type="text" class="form-control" id="n_puerta">
+                        </div>
+                        <div class="col">
+                            <label for="sede" class="form-label">Sede:</label>
+                            <select class="form-select" id="sede">
+                                <option value="Ilo">Ilo</option>
+                                <option value="Ichuña">Ichuña</option>
+                                <option value="Moquegua">Moquegua</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="horario" class="form-label">Horario:</label>
+                        <input type="text" class="form-control" id="horario">
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+

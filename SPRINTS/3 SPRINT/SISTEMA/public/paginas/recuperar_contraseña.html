@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center align-items-center vh-100">
+            <div class="col-md-6">
+                <div class="card p-4">
+                    <div class="card-body text-center">
+                        <img src="/public/imagenes/logo_unam.png" alt="UNAM Logo" class="logo mb-3">
+                        <h2>Recuperar contraseña</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="username">Usuario (DNI)</label>
+                                <input type="text" class="form-control" id="username" name="username" required>
+                            </div>
+                            <button type="button" class="btn btn-primary btn-block" onclick="enviartoken()">Obtener Token de Recuperación</button>
+                            <a href="/public/index.html" class="d-block text-center mt-3">Regresar a Login</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- FUNCIO PARA INGRESAR TOKEN Y VERIFICAR SI LA CONTRASEÑA ES CORRECTA 
+     HAY QUE VER COMO ENVIAR EL CORREO-->
+    <script>
+        function enviartoken() {
+            window.location.href = 'cambio_contraseña.html';
+        }
+    </script>
+</body>
+</html>
+

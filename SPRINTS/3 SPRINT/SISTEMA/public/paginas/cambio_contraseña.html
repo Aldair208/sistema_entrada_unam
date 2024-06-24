@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 cambio contraseña</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center align-items-center vh-100">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-center mb-4">
+                            <!-- INGRESAR EL LOGO DE LA UNAM -->
+                            <img src="/public/imagenes/logo_unam.png" alt="UNAM Logo" class="logo">
+                        </div>
+
+                        <h2 class="text-center">Recuperar contraseña</h2>
+
+                        <form>
+                            <div class="form-group">
+                                <label for="token">Token de recuperación *</label>
+                                <input type="text" class="form-control" id="token" name="token" required>
+                                <small class="form-text text-muted">Ingrese el token que llegó a su correo electrónico.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="new-password">Nueva contraseña *</label>
+                                <input type="password" class="form-control" id="new-password" name="new-password" required>
+                                <small class="form-text text-muted">Ingrese una nueva contraseña.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="confirm-password">Vuelva a escribir la nueva contraseña *</label>
+                                <input type="password" class="form-control" id="confirm-password" name="confirm-password" required>
+                                <small class="form-text text-muted">Ingrese la nueva contraseña nuevamente.</small>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">CAMBIAR CONTRASEÑA</button>
+                            
+                            <!-- LINK PARA IR AL INDEX -->
+                            <a href="/public/index.html" class="d-block text-center mt-3">Regresar a Login</a>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 d-none d-md-flex align-items-center justify-content-center">
+                <!-- AGREGAR IMAGEN -->
+                <img src="" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
